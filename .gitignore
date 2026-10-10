@@ -1,0 +1,13 @@
+# your own config and secrets
+build/
+*.yaml
+!config/config.example.yaml
+secrets*
+.keys/
+*.jks
+# downloads and outputs
+.sdk/
+deps/
+out/
+logs/
+*.apk
