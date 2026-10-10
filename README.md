@@ -1,7 +1,12 @@
 # zte-f50-mihomo
 
-在**不 Root、不解锁**的中兴 F50 随身 WiFi 上跑 [mihomo](https://github.com/MetaCubeX/mihomo)：一个自己写的无界面安卓应用，
-开机自启，提供 HTTP/SOCKS 代理和网页管理面板（metacubexd）。原厂系统、5G、内置卡都不动，卸载即复原。
+**在不 Root、不解锁的随身 WiFi 上跑 mihomo，让它成为随身的旁路由（不是透明网关）。**
+
+* 设备：中兴 F50 随身 WiFi。用一个自己写的无界面安卓应用跑 [mihomo](https://github.com/MetaCubeX/mihomo)，开机自启，
+  提供 HTTP/SOCKS 代理（`192.168.0.1:7890`）和网页管理面板（metacubexd）。
+* **旁路由，不是透明网关**：F50 仍然是原厂路由器，连上 Wi-Fi 默认直连；**要翻墙的设备需要自己把代理设为 `192.168.0.1:7890`**，
+  设置方法见[手机和电脑的网络设置](#手机和电脑的网络设置)。
+* 原厂系统、5G、内置卡都不动，卸载即复原。
 
 研究过程和每个结论的依据见 [docs/FINDINGS.md](docs/FINDINGS.md)。
 
