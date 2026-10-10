@@ -10,8 +10,6 @@ Proxies, groups and rules stay as they are. Changed for the F50:
     the device has a public IPv6 address on mobile data, so anyone else would need PROXY_USER/PROXY_PASS
   * redir-port / tproxy-port / tun are removed: they need root
   * GeoIP from the bundled Country.mmdb, no download at start
-  * DIRECT is removed from url-test/fallback groups: the test URL (gstatic) is reachable directly in China,
-    so such a group "wins" with DIRECT and foreign sites stop working
   * --manual GROUP turns a url-test/fallback group into a select group (choice kept across reboots)
   * --first GROUP=NODE puts NODE first in GROUP (the default choice of a select group)
 """
